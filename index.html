@@ -3,27 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="icon" href="Site Icon Link"> -->
+    <link rel="icon" href="./images/site-Logo.svg">
     <link rel="stylesheet" href="./css/main.css">
     <title>GoldenSoft</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+      </style>
 </head>
-<body>
-    <header class="site-header">
-        <div class="container">
-            <div class="header"></div>
+<body> 
+    <header>
+        <div class="bg-[#454F5B] py-[9px] ">
+            <div class="containers flex items-center justify-end gap-[197px]">
+                <p class="font-medium text-center text-[16px] leaeding-[18px] text-white">Скидка 10% по промокоду “ZAMOK” на все заказы до 10.09</p>
+                <a class="hidden lg:block font-medium text-center text-[12px] leaeding-[18px] text-white border-b-[2px] border-white" href="tel:+79665588499">Обратный звонок</a>
+            </div>
+        </div>
+        <div class="py-[20px]  border-b-[2px] border-[#00000005]">
+            <div class="containers flex items-center justify-between">
+                <div class="flex items-center gap-[101px]">
+                    <a href="/">
+                        <img src="./images/site-Logo.svg" alt="site-Logo" width="50" height="42">
+                    </a>
+                    <ul class="flex items-center gap-[32px]">
+                        <li>
+                            <a class="font-light text-[20px] text-[#161C24] leaeding-[23px] duration-300 hover:text-[#4295E4]" href="">Главная</a>
+                        </li>
+                        <li>
+                            <a class="flex items-center gap-[8px] font-light text-[20px] text-[#161C24] leaeding-[23px] duration-300 hover:text-[#4295E4]" href="">
+                                <span>Каталог</span>
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.2334 5.25L7.90006 9.91667L12.5667 5.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                            </a>
+                        </li>
+                        <li>
+                            <a class="font-light text-[20px] text-[#161C24] leaeding-[23px] duration-300 hover:text-[#4295E4]" href="">Оптовая продажа</a>
+                        </li>
+                        <li>
+                            <a class="font-light text-[20px] text-[#161C24] leaeding-[23px] duration-300 hover:text-[#4295E4]" href="">О нас</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-[30px]">
+                    <a class="flex items-center gap-[8px]" href="tel:+79665588499">
+                        <img src="./images/phone.svg" alt="phone" width="20" height="20">
+                        <span class="font-medium text-[18px] text-[#454F5B] leaeding-[21px] duration-300 hover:text-[#4295E4]">+7 (966) 55 88 499</span>
+                    </a>
+                    <button>
+                        <img src="./images/heart.svg" alt="heart" width="32" height="32">
+                    </button>
+                    <button>
+                        <img src="./images/bag.svg" alt="bag" width="32" height="32">
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
-    <main class="site-main">
-        <section class="hero-section">
-            <div class="container">
-                <div class="hero"></div>
-            </div>
-        </section>
-    </main>
-    <footer class="site-footer">
-        <div class="container">
-            <div class="footer"></div>
-        </div>
-    </footer>
+
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </body>
 </html>
